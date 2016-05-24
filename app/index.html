@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+	<base href="/app" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tweet Shirt</title>
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -8,12 +9,10 @@
 	<script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
-	<div ng-controller="AppController">{{sp.total | currency}}{{sp.designId}}</div>
-	<!-- <div ng-controller="ProductController">
-	{{products}}
-		<div ng-repeat="product in products">
-			<p>{{product}}</p>
-		</div>
-	</div> -->
+	<div ng-controller="AppController">
+		<nav nav></nav>
+		<div ng-view autoscroll=""></div>
+	</div>
 </body>
-</html>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,300,300italic,100italic,700' rel='stylesheet' type='text/css'></html>
